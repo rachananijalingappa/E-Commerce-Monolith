@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=StrongAdminPassword123!
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+
+  # The API will connect locally or via docker network 
+  # but for local dev from Visual Studio we just need SQL server running.
+
+volumes:
+  sqlvolume:

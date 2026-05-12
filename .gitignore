@@ -1,0 +1,41 @@
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+launchSettings.json
+
+## Rider
+.idea/
+*.sln.iml
+
+## NuGet
+**/[Pp]ackages/*
+*.nupkg
+**/packages/*
+
+## OS
+.DS_Store
+Thumbs.db
+
+## User secrets
+secrets.json
+
+## Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
